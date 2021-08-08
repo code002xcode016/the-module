@@ -41,7 +41,7 @@
   "mainPage": [
     {
       "request": {
-        "url": "https://api.twist.moe/api/anime",
+        "url": "https://twist.moe/api/anime",
         "method": "get",
         "headers": [
           {
