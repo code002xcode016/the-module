@@ -10,8 +10,8 @@
     "moduleLenguage": "ENG",
     "moduleType": "Video",
     "baseURL": "https://yugenani.me/",
-    "moduleDeveloperSite": "",
-    "UpdateSite": "",
+    "moduleDeveloperSite": "https://github.com/code002xcode016/the-module",
+    "UpdateSite": "https://raw.githubusercontent.com/code002xcode016/the-module/main/moduleTemplate.json",
     "preferedServer": "",
     "preferedDownloadServer": "",
     "blackListed": [
@@ -41,7 +41,7 @@
   "mainPage": [
     {
       "request": {
-        "url": "",
+        "url": "https://api.twist.moe/api/anime",
         "method": "get",
         "headers": [
           {
