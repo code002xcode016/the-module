@@ -41,12 +41,12 @@
   "mainPage": [
     {
       "request": {
-        "url": "https://twist.moe/api/anime",
+        "url": "https://yugenani.me/",
         "method": "get",
         "headers": [
           {
-            "key": "x-access-token",
-            "value": "0df14814b9e590a1f26d3071a4ed7974"
+            "key": "",
+            "value": ""
           }
         ],
         "httpBody": null
