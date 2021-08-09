@@ -1113,7 +1113,7 @@
        var title = data.querySelector('a.ep-details').title.replace('Visit' , '');
        var epnum = data.querySelector('a.ep-details > div.ep-origin-details > div.ep-statistics > time').innerText;
     
-       var data2 = new quickData(link, image, title, epnum);
+       var data2 = new quickData(new ModuleRequest(link, 'get' , emptyKeyValue , null), image, title, epnum);
        dataArray.push(data2);
    }
    var topLayout = new Layout(new Insets(0, 0, 0, 0), 1, 2, 3, 1, 500, new Size(400, 400), new Ratio('width', 1, 1), new Size(0, 0), 0, 0);
@@ -1125,13 +1125,13 @@
        var image = data.querySelector('div.anime-poster__container > img').dataset.src;
        var title = data.title;
        var season = data.querySelector('div.anime-data > div > span').innerText;
-      var realdata = new quickData(link, image, title, season);
+      var realdata = new quickData(new ModuleRequest(link, 'get' , emptyKeyValue , null), image, title, season);
       dataArray2.push(realdata);
    }
    output.push(new Output(CellDesings.Special3,Orientation.horizontal,DefaultLayouts.none,Paging.centered,new Section('',false),topLayout,dataArray)); 
    output.push(new Output(CellDesings.normal2,Orientation.horizontal,DefaultLayouts.longTripletsDouble,Paging.leading,new Section('All time popular',true),null,dataArray2));
     let MainPageObject = new MainPage(new ModuleRequest('','get',emptyKeyValue,null),new Extra([new Commands('',emptyKeyValue)],emptyKeyValue),new JavascriptConfig(true,false,''),output);
-    
+    console.log(output)
 
   
     var finalJson = JSON.stringify(MainPageObject);
